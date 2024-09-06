@@ -4,12 +4,12 @@
 @tailwind utilities;
 
 .navbar-fixed{
-    @apply fixed backdrop-blur bg-white bg-opacity-70 shadow-md
+    @apply fixed backdrop-blur bg-white bg-opacity-70 shadow-md dark:bg-dark dark:shadow-slate-700 dark:bg-opacity-70
 
 }
 
 .hamburger-line {
-    @apply w-[30px] h-[2px] bg-dark block my-2 transition duration-300 ease-in-out;
+    @apply w-[30px] h-[2px] bg-dark block my-2 transition duration-300 ease-in-out dark:bg-white
 }
 
 .hamburger-active > span:nth-child(1){
@@ -22,4 +22,8 @@
 
 .hamburger-active > span:nth-child(3){
     @apply -rotate-45
+}
+
+#dark-toggle:checked ~ label div.toggle-circle{
+    @apply translate-x-4
 }
