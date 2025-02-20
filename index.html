@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Audryan H N Tailwindcss</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/final.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Moderustic:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="icon" href="img/AHNicon.png" type="image/png" />
     <script>
@@ -35,7 +36,7 @@
       localStorage.removeItem("theme");
     </script>
   </head>
-  <body class="overflow-x font-moderustic">
+  <body class="overflow-x-hidden font-moderustic">
     <!-- Header Start -->
     <header
       class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent"
@@ -137,7 +138,11 @@
     <section id="home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="self-center w-full px-4 lg:w-1/2">
+          <div
+            class="self-center w-full px-4 lg:w-1/2"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Halo Semua 👋, Saya
               <span
@@ -167,7 +172,11 @@
             >
           </div>
 
-          <div class="self-end w-full px-4 lg:w-1/2">
+          <div
+            class="self-end w-full px-4 lg:w-1/2"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <div class="relative mt-10 lg:mt-0 lg:right-0">
               <img
                 src="img/porto.png"
@@ -200,7 +209,11 @@
     <section id="about" class="pt-36 pb-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-7 lg:w-1/2">
+          <div
+            class="w-full px-4 mb-7 lg:w-1/2"
+            data-aos="fade-right"
+            data-aos-duration="750"
+          >
             <h1 class="mb-3 text-2xl font-bold text-primary lg:text-3xl">
               Tentang Saya
             </h1>
@@ -219,7 +232,11 @@
             </p>
           </div>
 
-          <div class="w-full px-4 pt-12 mb-7 lg:w-1/2">
+          <div
+            class="w-full px-4 pt-12 o mb-7 lg:w-1/2"
+            data-aos="fade-left"
+            data-aos-duration="750"
+          >
             <h1
               class="mb-2 text-xl font-bold text-dark lg:text-2xl dark:text-white"
             >
@@ -298,6 +315,24 @@
                     />
                   </svg>
                 </a>
+
+                <!-- Github -->
+                <a
+                  href="https://github.com/Yakiel1331"
+                  class="flex items-center justify-center mx-1 my-2 transition-all duration-200 ease-in-out border rounded-full w-9 h-9 border-slate-300 hover:bg-primary hover:text-white dark:text-darksecondary dark:hover:text-white"
+                >
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -311,7 +346,11 @@
     <section id="portfolio" class="pb-16 pt-36 bg-slate-100 dark:bg-slate-900">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-16 text-center">
+          <div
+            class="max-w-xl mx-auto mb-16 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h1 class="mb-2 text-lg font-bold text-primary lg:text-xl">
               Portfolio
             </h1>
@@ -330,7 +369,7 @@
           <div
             class="flex flex-wrap justify-center w-full px-4 xl:w-10/12 xl:mx-auto"
           >
-            <div class="p-4 mb-12 md:w-1/2">
+            <div class="p-4 mb-12 md:w-1/2 projects">
               <div
                 class="flex overflow-hidden rounded-md shadow-md aspect-video"
               >
@@ -349,7 +388,7 @@
               <a
                 href="https://colab.research.google.com/drive/1zc5UZLkfky-4giaxRTfRbqO2ycWJhMQl#scrollTo=maKkeqcZDzkO"
                 target="_blank"
-                class="mt-5 text-2xl font-bold text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                class="inline-block mt-5 text-2xl font-bold text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                 >AI Developement to Predict Diabetes with python</a
               >
               <p
@@ -361,7 +400,7 @@
               </p>
             </div>
 
-            <div class="p-4 mb-12 md:w-1/2">
+            <div class="p-4 mb-12 md:w-1/2 projects">
               <div
                 class="flex overflow-hidden rounded-md shadow-md aspect-video"
               >
@@ -373,7 +412,7 @@
               </div>
               <a
                 href="https://colab.research.google.com/drive/1P_qg9dtz6MDtYKnIdVs7Xw17prli8xVb?usp=sharing"
-                class="mt-5 text-2xl font-bold text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                class="inline-block mt-5 text-2xl font-bold text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                 >Digital Image Processing With Python</a
               >
               <p
@@ -384,7 +423,7 @@
               </p>
             </div>
 
-            <div class="p-4 mb-12 md:w-1/2">
+            <div class="p-4 mb-12 md:w-1/2 projects">
               <div
                 class="flex overflow-hidden rounded-md shadow-md aspect-video"
               >
@@ -420,7 +459,7 @@
               </p>
             </div>
 
-            <div class="p-4 mb-12 md:w-1/2">
+            <div class="p-4 mb-12 md:w-1/2 projects">
               <div class="overflow-hidden rounded-md shadow-md aspect-video">
                 <img
                   src="img/Portofolio/OpenDB movies.png"
@@ -452,7 +491,11 @@
     <section id="skills" class="pb-32 dark:bg-slate-200 pt-36 bg-dark">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-8 text-center">
+          <div
+            class="max-w-xl mx-auto mb-8 text-center"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
             <h1 class="mb-2 text-lg font-bold text-primary md:text-xl">
               Skills
             </h1>
@@ -473,35 +516,35 @@
             <a
               href="https://www.python.org/"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/python.svg" alt="" class="" />
             </a>
             <a
               href="https://tailwindcss.com/"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/tailwindcss.svg" alt="" class="" />
             </a>
             <a
               href="https://www.java.com/"
               target="_blank"
-              class="mx-4 py-4 max-w-[120px] grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="mx-4 py-4 max-w-[120px] skills-icon grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/java.svg" alt="" class="w-10" />
             </a>
             <a
               href="https://isocpp.org/"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/c++.svg" alt="" class="w-10" />
             </a>
             <a
               href="https://www.w3schools.com/html/html_intro.asp"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/html.svg" alt="" class="w-10" />
             </a>
@@ -509,7 +552,7 @@
             <a
               href="https://www.php.net/"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/php.svg" alt="" class="w-14" />
             </a>
@@ -517,16 +560,24 @@
             <a
               href="https://www.w3schools.com/js/"
               target="_blank"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] skills-icon mx-4 py-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition duration-400 lg:mx-6 xl:mx-8"
               ><img src="img/Skills/Javascript.svg" alt="" class="w-[4rem]"
             /></a>
 
             <a
               href="https://www.w3schools.com/css/"
               target="_blank"
-              class="grayscale max-w-[120px] hover:grayscale-0 mx-4 py-4 opacity-60 hover:opacity-100 transition duration-400 lg:mx-6 xl:mx-8"
+              class="grayscale max-w-[120px] skills-icon hover:grayscale-0 mx-4 py-4 opacity-60 hover:opacity-100 transition duration-400 lg:mx-6 xl:mx-8"
             >
               <img src="img/Skills/css-icon.svg" alt="" class="w-10" />
+            </a>
+
+            <a
+              href="https://www.w3schools.com/css/"
+              target="_blank"
+              class="grayscale max-w-[120px] skills-icon hover:grayscale-0 mx-4 py-4 opacity-60 hover:opacity-100 transition duration-400 lg:mx-6 xl:mx-8"
+            >
+              <img src="img/Skills/mysql-icon.svg" alt="" class="w-14" />
             </a>
           </div>
         </div>
@@ -636,7 +687,12 @@
 
     <!-- formspree contact section start -->
     <section id="contact" class="pt-32 pb-32 dark:bg-slate-900">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="zoom-in"
+        data-aos-duration="750"
+        data-aos-offset="250"
+      >
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h1 class="mb-2 text-lg font-bold text-primary lg:text-xl">
@@ -831,6 +887,23 @@
                   />
                 </svg>
               </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/Yakiel1331"
+                class="flex items-center justify-center mx-1 my-2 transition-all duration-200 ease-in-out border rounded-full w-9 h-9 border-slate-300 hover:bg-primary hover:text-white dark:text-darksecondary dark:hover:text-white"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
             </div>
             <p class="text-xs text-center text-slate-400">
               Dibuat Oleh
@@ -863,6 +936,7 @@
     </a>
     <!-- Back to Top Button End  -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>
